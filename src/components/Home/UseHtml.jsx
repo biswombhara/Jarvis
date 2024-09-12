@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { HtmlContext } from "../context/HtmlContext";
+import { HtmlContext } from "../../context/HtmlContext";
 
 export default function UseHtml() {
     const htmlContent = useContext(HtmlContext);

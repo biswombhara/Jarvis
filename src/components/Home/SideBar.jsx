@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AddIcon from '@mui/icons-material/Add';
 import { Card, Typography, List, ListItem, ListItemPrefix, Alert} from "@material-tailwind/react";
 import { Cog6ToothIcon } from "@heroicons/react/24/solid";
-import { Context } from "../context/Context";
+import { Context } from "../../context/Context";
 import  "./SideBar.css";
 import { Link } from "react-router-dom";
 
@@ -25,12 +25,14 @@ export default function SideBar() {
       </div>
       <div className="relative top-[30rem]">
       <List className="text-white ">
+      <Link to={"/help"}>
         <ListItem className="hover:text-black p-1">
           <ListItemPrefix>
             <HelpIcon className="h-5 w-5" />
           </ListItemPrefix>
           Help
         </ListItem>
+        </Link>
         <Link to={"/about"}>
         <ListItem className="hover:text-black p-1">
           <ListItemPrefix>
@@ -38,13 +40,15 @@ export default function SideBar() {
           </ListItemPrefix>
           About
         </ListItem>
-        </Link>
+        </Link>        
+        <Link to={"/settings"}>
         <ListItem className="hover:text-black  p-1">
           <ListItemPrefix>
             <Cog6ToothIcon className="h-5 w-5" />
           </ListItemPrefix>
           Settings
         </ListItem>
+        </Link>
       </List>
       </div>
       <Alert open={openAlert} className="mt-auto bg-[#000814] w-64 p-4 mb-4" onClose={() => setOpenAlert(false)}>

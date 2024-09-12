@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Avatar, Badge } from "@material-tailwind/react";
-import { Context } from '../context/Context';
+import { Context } from '../../context/Context';
 import "./ChatBox.css"
 import ChatLoader from './ChatLoader';
-import HtmlProvider from '../context/HtmlContext';
+import HtmlProvider from '../../context/HtmlContext';
 import UseHtml from './UseHtml';
 
 function ChatBox() { 

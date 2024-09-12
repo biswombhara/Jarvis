@@ -1,35 +1,33 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import Typography from '@mui/material/Typography';
-import CardActionArea from '@mui/material/CardActionArea';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import FestivalIcon from '@mui/icons-material/Festival';
 import AnimationIcon from '@mui/icons-material/Animation';
 import "./Card.css";
-import { Context } from '../context/Context';
+import { Context } from '../../context/Context';
 
 export default function Cards() {
-  const {setInput, search} = React.useContext(Context)
+  const { search } = React.useContext(Context)
   let arr = [
     {
-      des: "Say about Gandhi Engineering College, Bhubaneswar",
+      des: "Say about cultural festivals celebrated in India !",
       icon: <AutoFixHighIcon className='text-white text-[1rem]' />,
       idx: 1
     },
     {
-      des: "Who is the prime minister of India",
+      des: "Who is the prime minister of India ?",
       icon: <TipsAndUpdatesIcon className='text-white text-[1rem]' />,
       idx: 2
     },
     {
-      des: "Tell me some tourist places in Odisha",
+      des: "Tell me some tourist places in Odisha.",
       icon: <FestivalIcon className='text-white text-[1rem]' />,
       idx: 3
     },
     {
-      des: "What is the first programming",
+      des: "What is React js ?",
       icon: <AnimationIcon className='text-white text-[1rem]' />,
       idx: 4
     },
@@ -40,7 +38,7 @@ export default function Cards() {
       {
         arr.map((data, idx) => (
           <Card onClick={()=>search(data.des)} key={idx}  className='!bg-[#1e1f20] card rounded h-[190px] mr-2' sx={{ width: 190 }}>
-            <div className='p-2 flex items-center'>              
+            <div className='p-4 flex items-center'>              
             <Typography variant="body2" className='text-white'>
                   {data.des}
                 </Typography>

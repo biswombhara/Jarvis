@@ -1,11 +1,12 @@
-
-import About from './About'
-import AdvancedJarvis from './AdvancedJarvis'
+import About from './components/About/About'
+import AdvancedJarvis from './components/Advanced/AdvancedJarvis'
 import './App.css'
-import Body from './components/Body'
-import SideBar from './components/SideBar'
-import TopBar from './components/TopBar'
+import Body from './components/Home/Body'
+import SideBar from './components/Home/SideBar'
+import TopBar from './components/Home/TopBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Setting from './components/Settings/Setting'
+import Help from './components/Help/Help'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
     } />
     <Route path='/about' element={<About/>} />
     <Route path='/plan' element={<AdvancedJarvis/>} />
+    <Route path='/settings' element={<Setting/>} />
+    <Route path='/help' element={<Help/>} />
     </Routes>
     </BrowserRouter> 
   )

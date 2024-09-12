@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import './Search.css'
 import SearchIcon from '@mui/icons-material/Search';
-import { Context } from '../context/Context';
+import { Context } from '../../context/Context';
 
 function Search() {
   const {input, setInput, search} = useContext(Context);
