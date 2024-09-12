@@ -1,0 +1,16 @@
+.adv{
+    background-image: url(
+"https://cdn.dribbble.com/users/1770290/screenshots/6164788/media/2e3c26809331296b2522650ae6b42fbe.gif");
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: 'Steelfish Rg', 'helvetica neue', 
+                      helvetica, arial, sans-serif;
+      font-weight: 800;
+      -webkit-font-smoothing: antialiased;
+      animation: fadein 2s;
+  }

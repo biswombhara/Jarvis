@@ -1,0 +1,33 @@
+.searchBar{
+    border: 2px solid transparent;
+    border-radius: 41px;
+    width: 55rem;
+    box-shadow: 0px 0px 9px 1px #0000008a;
+    z-index: 5000;
+    background-color: #313132;
+}
+.Sbtn{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+.Sbtn:hover{
+    background-color: white;
+}
+.searchip{
+    background-color: #313132;
+    border: none;
+    border-radius: 41px;
+    padding: 1.2rem;
+    width: 52rem;
+    color: white;
+}
+    .searchips > .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #444445;
+    color: white;
+    }
+    .searchips > .form-control::placeholder {
+        color: white;
+        }

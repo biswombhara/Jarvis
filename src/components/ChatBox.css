@@ -1,0 +1,13 @@
+.results{
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.results > p > div > h1{
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.results::-webkit-scrollbar{
+    display: none;
+}

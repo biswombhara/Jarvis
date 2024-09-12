@@ -1,0 +1,6 @@
+
+@media only screen and (max-width: 481px){
+    .sideBar{
+        display: none !important;
+    }
+}

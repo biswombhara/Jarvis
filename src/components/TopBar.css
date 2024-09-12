@@ -1,0 +1,16 @@
+.Nav{
+    max-width: 100vw !important;
+    border-bottom: 1px solid rgb(67, 67, 67) !important;
+}
+
+
+@media only screen and (max-width: 481px){
+    .tony{
+        justify-content: center;
+    }.Nav{
+        padding: 0.5rem !important;
+    }
+    .gap-2{
+        margin: 0 -1.75rem !important;
+    }
+}
