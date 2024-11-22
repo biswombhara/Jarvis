@@ -10,7 +10,6 @@ function Payment() {
   const [pay, setPay] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [redirect, setRedirect] = React.useState(false);
-  const [play, setPlay] = React.useState("");
   const handleOpen = () => {
     setOpen("autoplay");
     setPlay(<Video/>);
@@ -18,7 +17,7 @@ function Payment() {
       setOpen(false);
       setRedirect(true);
       setPay(true);
-    }, 12000);
+    }, 5000);
   };
   let [sec, setSec] = useState(60);
   let [min, setMin] = useState(4);
