@@ -12,12 +12,12 @@ export default function Cards() {
   const { search } = React.useContext(Context)
   let arr = [
     {
-      des: "Say about cultural festivals celebrated in India !",
+      des: "Say about festivals celebrated in India !",
       icon: <AutoFixHighIcon className='text-white text-[1rem]' />,
       idx: 1
     },
     {
-      des: "Who is the prime minister of India ?",
+      des: "Print hello world in java ?",
       icon: <TipsAndUpdatesIcon className='text-white text-[1rem]' />,
       idx: 2
     },

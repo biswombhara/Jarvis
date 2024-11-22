@@ -11,3 +11,9 @@
 .results::-webkit-scrollbar{
     display: none;
 }
+
+
+.code{
+    background-color: #ff0000;
+    height: 5rem;
+}

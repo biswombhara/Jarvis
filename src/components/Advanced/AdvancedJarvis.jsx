@@ -1,6 +1,7 @@
 import React from 'react'
 import TopBar from '../Home/TopBar'
 import './AdvancedJarvis.css'
+import { Link } from "react-router-dom";
 
 
 import {
@@ -57,7 +58,7 @@ function AdvancedJarvis() {
             color="white"
             className="mt-6 flex justify-center gap-1 text-7xl font-normal"
           >
-            <span className="mt-2 text-4xl">$</span>29{" "}
+            <span className="mt-2 text-4xl">₹</span>249{" "}
             <span className="self-end text-4xl">/mo</span>
           </Typography>
         </CardHeader>
@@ -92,6 +93,7 @@ function AdvancedJarvis() {
           </ul>
         </CardBody>
         <CardFooter className="mt-12 p-0">
+          <Link to="/payment">
           <Button
             size="lg"
             color="white"
@@ -101,6 +103,7 @@ function AdvancedJarvis() {
           >
             Buy Now
           </Button>
+          </Link>
         </CardFooter>
       </Card>
       </div>

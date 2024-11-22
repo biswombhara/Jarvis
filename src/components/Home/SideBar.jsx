@@ -17,7 +17,7 @@ export default function SideBar() {
   return (
     <Card className="h-screen sideBar !text-white rounded-0 bg-[#161515] w-full max-w-[17rem] p-1 shadow-xl shadow-blue-gray-900/5">
       <div className="flex flex-column mx-4">
-        <MenuIcon className="my-3"/>
+      <MenuIcon className="my-3"/>
         <a onClick={()=>newChat} className="p-3 bg-[#000814] rounded-[2rem] w-36 text-white" href="">
           <AddIcon className="mr-2 text-white" />
           New Chat

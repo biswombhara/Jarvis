@@ -1,0 +1,8 @@
+
+.arr{
+    transition: all 0.5s !important;
+    color: tomato;
+}
+.arr:hover{
+    scale: 1.25;
+}

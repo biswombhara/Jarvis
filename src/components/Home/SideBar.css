@@ -4,3 +4,7 @@
         display: none !important;
     }
 }
+
+#menu:checked{
+    scale: 5 !important;
+}

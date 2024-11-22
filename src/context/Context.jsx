@@ -15,7 +15,7 @@ const ContextProvider = (props) => {
     function TypingEffect(idx, nextWord){
         setTimeout(function(){
             setResultData(prev=>prev+nextWord);
-        }, 75*idx)
+        }, 15*idx)
     }
 
     function newChat(){
@@ -28,6 +28,7 @@ const ContextProvider = (props) => {
         setResults(true);
         setRecentPrompts(input);
         const response = await run(input);
+        console.log(response)
         let res1 = response.split("**");
         let newResponse1 = "";
         for(let i = 0; i<res1.length; i++){
@@ -51,8 +52,14 @@ const ContextProvider = (props) => {
                 newResponse1 += "<b>"+res1[i]+"</b>";
             }
         }        
-        let newResponse2 = newResponse1.split("*").join("<br>");
-        let newResponse3Array = newResponse2.split(" ");
+        let newResponse3 = newResponse1.replaceAll("\n","<br>");
+        let newResponse4 = newResponse3.replaceAll("   ","&nbsp");
+        let newResponse4a = newResponse4.replaceAll("   ","&nbsp");
+        let newResponse4b = newResponse4a.replaceAll("   ","&nbsp");
+        let newResponse4c = newResponse4b.replaceAll("   ","&nbsp");
+        let newResponse5 = newResponse4c.split("```").join("<br>");
+        let newResponse6 = newResponse5.split("`").join(`&nbsp`);
+        let newResponse3Array = newResponse6.split(" ");
         for(let i=0; i<newResponse3Array.length ; i++){
             TypingEffect(i, newResponse3Array[i]+" ")
         }

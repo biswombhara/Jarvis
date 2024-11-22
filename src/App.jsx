@@ -7,6 +7,7 @@ import TopBar from './components/Home/TopBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Setting from './components/Settings/Setting'
 import Help from './components/Help/Help'
+import Payment from './components/Payment/Payment'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <Route path='/plan' element={<AdvancedJarvis/>} />
     <Route path='/settings' element={<Setting/>} />
     <Route path='/help' element={<Help/>} />
+    <Route path='/payment' element={<Payment/>} />
     </Routes>
     </BrowserRouter> 
   )

@@ -11,7 +11,7 @@ function ChatBox() {
   const htmlString = resultData;
 
   return (
-    <div className="flex sm:w-[90vw] flex-column w-[50vw] m-auto">
+    <div className="flex sm:w-[90vw] flex-column w-[50vw]">
       <div className="search flex items-center my-4">
       <Badge placement="top-end" overlap="circular" color="green" withBorder>
         <Avatar
