@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import "./Payment.css";
-import Video from "./Video";
 
 function Payment() {
   const [pay, setPay] = React.useState(false);
@@ -12,7 +11,6 @@ function Payment() {
   const [redirect, setRedirect] = React.useState(false);
   const handleOpen = () => {
     setOpen("autoplay");
-    setPlay(<Video/>);
     setTimeout(() => {
       setOpen(false);
       setRedirect(true);
@@ -86,7 +84,6 @@ function Payment() {
           <br />
           Please do not refresh
           </div>
-           {/* {play} */}
         </Backdrop> 
         </div>
       ) : (
