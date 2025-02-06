@@ -33,7 +33,7 @@ function About() {
                 </p>
                 <h4 className='text-xl mb-2'>We have used only <b>ReactJS</b> for fronted. For styling used <b>Tailwind CSS</b>. Used <b>MaterialUI</b> for components</h4>
                 <h3 className='text-[#00ff51] mb-2'>We also provide Software as a Service. Connect with us to create your responsive website NOW...</h3>
-                <a href="buymeacoffee.com/biswombhara">
+                <a href="https://buymeacoffee.com/biswombhara">
                 <button className="btn btn-success my-4">Buy a cup of coffee 🍵 for developers...</button>
                 </a>
                 <div className='flex scale-[0.95]'>
