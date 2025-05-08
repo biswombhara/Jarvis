@@ -1,22 +1,13 @@
-const API_KEY = "AIzaSyCxZ9TInUaCknySZqmubOumkTxG5iqbnPg";
-
-/*
- * Install the Generative AI SDK
- *
- * $ npm install @google/generative-ai
- */
-
 import {
     GoogleGenerativeAI,
-    HarmCategory,
-    HarmBlockThreshold,
   } from "@google/generative-ai";
-  
+
+  const API_KEY = process.env.GEMINI_API_KEY;
   const apiKey = API_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-flash",
+    model: "gemini-2.0-flash",
   });
   
   const generationConfig = {
@@ -37,7 +28,7 @@ import {
     });
   
     const result = await chatSession.sendMessage(prompt);
-    console.log(result.response.text());
+    console.log("result.response.text()");
     return result.response.text();
   }
   
