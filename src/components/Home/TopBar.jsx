@@ -25,7 +25,7 @@ export default function TopBar() {
         <Link to={"/"}>
         <Typography
           as="a"
-          href="#"
+          href="https://jarvis-masterbisup.netlify.app/"
           variant="h6"
           className="mr-4 text-2xl text-white flex items-center cursor-pointer py-1.5 lg:ml-2"
         >
